@@ -1,0 +1,20 @@
+nav.navbar.navbar-inverse
+    .container
+        .navbar-header
+            a.navbar-brand(href="#")
+                span.glyphicon.glyphicon-edit.icon-left
+                | To Do
+
+        ul.nav.navbar-nav.navbar-right
+            li
+                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-expanded="false")
+                    span.glyphicon.glyphicon-user.icon-left(aria-hidden="true")
+                    | Sasidhar
+                    span.caret
+
+                ul.dropdown-menu(role="menu")
+                    li: a(href="#") Profile
+                    li: a(href="#") Change Password
+                    li.divider
+                    li: a(href="#") Sign out
+

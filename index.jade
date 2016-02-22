@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    .container-fluid
+        .row
+            .col-sm-2.left-menu
+                include includes/left-menu
+            .col-sm-7.todo-container
+                p.lead Todo's
+                ul.list-unstyle
+                    - for(var i=0; i < 8; i++)
+                        li.panel.panel-default
+                            .panel-body
+                                .row
+                                    .col-sm-11
+                                        label
+                                            input(type="checkbox")
+                                            | basic
+                                    .col-sm-1.delete
+                                        a(href="#")
+                                            span.glyphicon.glyphicon-trash
+
+            .col-sm-3.calendar
+                p.lead Calender Events
+                #datepicker
+
+    script.
+        $(document).ready(function () {
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        });
+
+

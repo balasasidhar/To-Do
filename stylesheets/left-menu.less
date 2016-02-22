@@ -1,0 +1,38 @@
+.left-menu {
+  min-height: 600px;
+  border-right: 1px solid #ddd;
+  padding: 0;
+  .box-shadow(0px, 4px, 4px, rgba(0, 0, 0, 0.15));
+  .list-group {
+    .list-group-item {
+      border-radius: 0;
+      border-right: 0;
+      border-left: 0;
+      padding: 10px 20px;
+      &:first-child {
+        border-top: 0;
+        .badge {
+          background: @primary;
+        }
+      }
+      &:nth-child(2) {
+        .badge {
+          background: @warning;
+        }
+      }
+      &:nth-child(3) {
+        .badge {
+          background: @success;
+        }
+      }
+      &:last-child {
+        .badge {
+          background: @danger;
+        }
+      }
+      .icon-left {
+        margin-right: 14px;
+      }
+    }
+  }
+}
